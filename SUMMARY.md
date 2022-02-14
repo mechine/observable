@@ -5,7 +5,7 @@
 * [可观测性](ke-guan-ce-xing.md)
 * [mongodb 查询及常用命令](mongodb-cha-xun-ji-chang-yong-ming-ling.md)
 * [mongodb 功能原理](mongodb-gong-neng-yuan-li.md)
-* [Sphinx](sphinx.md)
+* [trade-off](trade-off.md)
 * [solr](solr.md)
 * [Elasticsearch](elasticsearch.md)
 * [Redis](redis.md)
