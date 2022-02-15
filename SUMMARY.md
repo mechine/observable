@@ -17,4 +17,4 @@
 * [分布式实现](fen-bu-shi-shi-xian.md)
 * [窗口](chuang-kou.md)
 * [数据特征-词库](shu-ju-te-zheng-ci-ku.md)
-* [查询-使用 词库](cha-xun-shi-yong-ci-ku.md)
+* [数据处理-词库](shu-ju-chu-li-ci-ku.md)
