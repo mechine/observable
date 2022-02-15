@@ -44,4 +44,4 @@
   * [PROTO](xu-lie-hua-yu-fan-xu-lie-hua/proto.md)
   * [JSON](xu-lie-hua-yu-fan-xu-lie-hua/json.md)
 * [设计模式](she-ji-mo-shi.md)
-* [Page 1](page-1.md)
+* [架构模式](jia-gou-mo-shi.md)
