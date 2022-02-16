@@ -45,3 +45,6 @@
   * [JSON](xu-lie-hua-yu-fan-xu-lie-hua/json.md)
 * [设计模式](she-ji-mo-shi.md)
 * [架构模式](jia-gou-mo-shi.md)
+* [解决方案与算法](jie-jue-fang-an-yu-suan-fa/README.md)
+  * [分布式](jie-jue-fang-an-yu-suan-fa/fen-bu-shi.md)
+  * [索引](jie-jue-fang-an-yu-suan-fa/suo-yin.md)
