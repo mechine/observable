@@ -24,7 +24,7 @@
   * [solr](zu-jian/solr.md)
 * [JAVA](java/README.md)
   * [小技巧合集](java/xiao-ji-qiao-he-ji.md)
-  * [Page 1](java/page-1.md)
+  * [替换jar包中的类](java/ti-huan-jar-bao-zhong-de-lei.md)
   * [语言特性](java/yu-yan-te-xing/README.md)
     * [类型](java/yu-yan-te-xing/lei-xing.md)
   * [虚拟机](java/xu-ni-ji/README.md)
