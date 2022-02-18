@@ -1,0 +1,854 @@
+<html>
+<head>
+  <title>Evernote Export</title>
+  <basefont face="微软雅黑" size="2" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="exporter-version" content="YXBJ Windows/604163 (zh-CN, DDL); Windows/10.0.0 (Win64); EDAMVersion=V2;"/>
+  <style>
+    body, td {
+      font-family: 微软雅黑;
+      font-size: 10pt;
+    }
+  </style>
+</head>
+<body>
+<a name="1745"/>
+
+<div><span>
+  <div style="--en-clipped-content:article">
+<div><br/></div><div style="font-size: 16px; display:table-row; min-width: 100%; position: relative;"> <div style="font-size:100%;"><div style="background-color:rgb(245, 245, 245);"><table style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;background-color:rgb(255, 255, 255);"><tbody><tr><td><table style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;background-color:rgb(255, 255, 255);"><tbody><tr><td><table><tbody><tr><td style="background-color:rgb(255, 255, 255);"><table style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;"><tbody><tr><td bgcolor="#FFFFFF" style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;background-color:rgb(255, 255, 255);" valign="top"> <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;">1.前言</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">长期以来，IT行业一直有着重视技术创新而忽视人类因素的倾向，这导致多数产品存在程度不同的可用性问题。据研究机构近期对发达国家的统计：商用计算机用户的有效生产率仅有30%～40%；48%的软件缺陷属于可用性问题；在计算机应用系统开发项目中，31%的项目因可用性质量问题而失败，51%的项目只获得部分成功；90%的企业网站可用性较差；70%的企业对其网站设计不够满意；用户在商业网站上找到所要信息的几率只有42%；网上购物者最终放弃寻找欲购商品的几率为62%；51%的网站可用性问题是由于未运用最基本的可用性原则造成的。这些数据说明目前的IT产品存在严重的可用性问题。在我国，由于产业发展水平相对落后，产品的可用性问题更加严重。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">由于我们目前在这方面认识和实践的不足，关于易用性具体的测试内容与测试方法还掌握的很少。本文更多的是从收集的资料中整理出一个初步的易用性结构描述，有待进一步的研究和实践去丰富和提高。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 易用性，在很多资料和质量体系中也被称为可用性 . 本文中这2个名词含义是一致的.</p>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 2.软件易用性概述</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件易用性是软件质量体系结构中一个重要的质量特性。在各个标准体系中都有关于这方面的定义描述。在一些组织的标准定义中，可用性也是一个被采用的名称。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 无论该特性名称和具体细节如何，所有关于易用性或者可用性的研究都是围绕着用户对于产品的感受这个中心展开的。易用性(可用性)体现的是用户在使用过程中所实际感受到的产品质量，即使用质量（quality 
+                          in use）。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 国标中对于易用性及其子特性的描述如下：</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <span style="font-size:14px;font-family:宋体;text-indent:20pt;line-height:18px;font-weight:bold;"><strong>2.1易用性usability 
+                          </strong></span></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">与一组规定或潜在的用户为使用软件需作的努力和对这样的使用所作的评价有关的一组特性</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 2.1.1 易理解性understandability</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 与用户为认识逻辑概念及其应用范围所花的努力有关的软件属性。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 2.12 易学性　learnability</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 与用户为学习软件应用（例如运行控制、输入、输出）所花的努力有关的软件属性。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 2.13 易操作性operability</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 与用户为操作和运行控制所花努力有关的软件属性。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> ISO9126标准中的描述比原有国标更为明确和清晰：</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>易用性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在指定条件下软件产品被使用时，能够被理解、学习和吸引用户的能力。（功能性、可靠性、效率的一些方面也会影响易用性，但是在ISO9126中它们不被分类作为易用性）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 1）易理解性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件产品使用户明白软件是适当的以及怎么在特殊任务和使用条件下使用软件的能力。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 2）易学性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件产品使用户学习它的应用的能力。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 3）易操作性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件产品使用户操作和控制它的能力。（适合性、可变性、适应性和安装性可能会影响它）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 4）吸引性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件产品吸引用户的能力。（颜色、图片等）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 5）依从性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件产品遵循与易用性相关的标准、协定、风格指南或规章的能力</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在ISO9241中采用的是可用性这个名词。它包含了比单纯的软件易用性更为广泛的含义，体现的是用户在使用过程中所实际感受到的产品质量，即使用质量（quality 
+                          in use）。是从用户角度衡量IT产品是否有效、易学、高效、好记、少错和令人满意的质量指标，是决定产品市场竞争力的关键因素。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>可用性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">产品在特定使用环境下为特定用户用于特定用途时所具有的有效性（effectiveness）、效率（efficiency）和用户主观满意度（satisfaction）。其中：</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">有效性是用户完成特定任务时所具有的正确和完整程度； </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">效率是用户完成任务的正确完整程度与所用资源（如时间）之间的比率；</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">满意度是用户在使用产品过程中具有的主观满意和接受程度。</p>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 3.软件易用性相关因素</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件的易用性是由软件的人机用户交互界面(User Interface 
+                          ）来集中体现的。界面的布局设计，操作的逻辑与流程，交互信息的显示，帮助和索引文档…用户对于这些元素能否容易的学习,理解,操作的程度就是软件产品的易用性.</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> UI所包含的元素是多种多样的.软件包含的全部窗口,菜单,按钮,下拉框,背景,图标,文本,提示,图象,声音,视频等等媒体和信息本身以及这些元素组织和表现的方式都是UI.</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 评价UI的标准有以下七个要素:</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 符合标准和规范、直观性、一致性、灵活性、舒适性、正确性、实用性</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.1符合标准和规范</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 符合标准和规范被认为是最重要的用户界面要素。对于操作系统平台，有其自己的标准和规范，如微软的WINDOWS，那么对于某个平台上运行的软件，就需要把该平台的标准和规范作为UI设计说明的补充内容。对于测试工作来讲，也就要根据这些标准和规范设计测试用例。如果软件本身要创立软件易用性标准，那么需要遵守其他6个元素。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.2直观性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 当测试用户界面时，测试人员要考虑以下问题，以及如何衡量自己软件的直观程度：</p>
+                        <ul>
+                          <li> 用户界面是否洁净、不唐突、不拥挤？UI不应该为用户制造障碍。所需功能或者期待的响应应该明显，并在与其出现的地方</li>
+                          <li>UI的组织和布局合理吗？是否允许用户轻松地从一个功能转到另一个功能？下一步做什么明显吗？任何时刻都可以决定放弃或者退回、退出吗？输入得到承认了吗？菜单或者窗口是否深藏不露？</li>
+                          <li>有多余的功能吗？软件整体抑或局部是否做得太多？是否有太多特性把工作复杂化了？是否感到信息太庞杂？</li>
+                          <li>如果其他所有努力失败，帮助系统真能帮忙吗？</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.3一致性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 测试的软件本身以及与其他软件的一致性是一个关键属性。用户的使用习惯性强了，希望一个程序的操作方式能够带到另一个程序中。如果操作方式不同，会或多或少地给用户带来挫败感。如果软件或操作系统平台有一个公共的标准，那么UI就要遵守它。如果没有，那就要注意软件的特性，确保形似操作以形似方式进行。在UI测试过程中，要考虑以下几个基本术语：</p>
+                        <ul>
+                          <li> 快捷键和菜单选项。快捷键一般要具有通用性，如F1为系统帮助。</li>
+                          <li>术语和命令。整个软件使用同样的术语吗？特性命名一致吗？例如：数据字典是否有时被叫做数据词典。</li>
+                          <li>用户级别。软件同一UI风格是否对应同一用户级别？是否有UI风格与用户级别不相称的情况出现？</li>
+                          <li>按钮的位置和等价的按键。如“确定”和“取消”按钮的相对位置；确定等价键通常使用回车键，而取消等价键通常使用ESC键。</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.4灵活性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 由于用户对于软件应用喜欢选择做做什么和怎样做，所以软件需要有较大的灵活性，同时也可能会发展为复杂性，加大测试工作的复杂性。测试软件UI是否灵活，可以参考以下几点：</p>
+                        <ul>
+                          <li>状态跳转。灵活的软件实现同一任务有多种选择和方式。结果是增加了通向软件各种状态的途径。状态转换图将变得更加复杂，福建测试人员需要花费更多时间决定测试那些相互连接的路径。</li>
+                          <li> 状态终止和跳过。当软件具有用户非常熟悉的模式时，用户需要直接跳到想去的页面；或者因为种种原因，用户需要提前终止当前的运行情况。</li>
+                          <li> 数据输入和输出。用户愈来愈希望有多种方式实现数据的输入和输出，所以要针对用户所可能需要的输入和输出方式进行测试。</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.5舒适性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 毫无疑问，软件应该用起来舒适，而不应该为用户工作制造障碍和困难。但是，软件舒适是一种感觉，比较模糊，所以要设计出软件舒适的正确公式是不可能的，但测试人员在测试时要根据实际情况对软件是否具有舒适性进行鉴别：</p>
+                        <ul>
+                          <li> 恰当。软件外观和感觉应该与所做的工作和用户背景相符，不同的行业或用户对软件的外观要求是不同的，在设计时，既不能太夸张也不能太朴素。</li>
+                          <li> 错误处理。程序应该在用户执行非法和不合理的操作之前提出警告，并且允许用户恢复由于错误操作导致丢失的数据。对于用户恶意的严重错误操作，程序要能够以一定规则进行判别，并采取适当的处理方式。</li>
+                          <li> 性能。一般情况下，系统性能当然是愈高愈好，但是某些情况下，用户需要操作慢一些，以便能够发现软件的一些操作情况。</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.6正确性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> UI正确性比起舒适性要明显得多，当然也就容易测试。正确性主要是指UI是否正确，不会使程序实际执行情况与用户理解产生偏差。但是有些问题测试人员要加以注意：</p>
+                        <ul>
+                          <li> 市场定位偏差。软件有没有多余的或者遗漏的功能，或者某些功能执行了与市场宣传材料不符合的操作？</li>
+                          <li> 语言描述和组织。程序员的语言描述和组织往往会使用户产生歧义或费解，或者令用户难以接受。</li>
+                          <li> 多媒体缺陷。UI设计的图标、图像、声音和视频设计不合理或不正确。如：图标大小不一致，声音没有采用相同的格式和采样率。</li>
+                          <li> 与UI说明不一致，即没有实现所见即所得。在测试过程中，一定要仔细检查执行程序的结果与UI描述的是否一致。</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 3.7实用性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">UI实用性主要是指具体UI特性是否实用。在测试过程中，检查每一功能点的UI是否具有实际实用价值，是否能够有助于用户执行软件相应的功能，否则就被认为实用性不好，为实用性的缺陷。</p>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 4.软件易用性研究方法与技术</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 对同一软件的易用性的评价是因人而异的,不同的用户由于他的经历,能力,思维方式和习惯的差异,对于同一软件会得出不同的感受.所以易用性研究的各种方法其核心都是以用户为中心.只有了解软件所面向的用户,然后从用户的角度分析和设计,才能得出真正具有优秀的易用性的软件产品.同样，在软件易用性的测试与评估活动中，核心的理念也是以用户为中心，从用户的角度出发。以下各种方法和理论，是在软件易用性活动中比较重要和经常采用的。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 4.1可用性工程 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">可用性工程（Usability Engineering）是IT产品及其用户界面开发的一种工程方法论，贯穿于产品整个生命周期的各个阶段，包括从需求获取、可用性问题分析、设计方案的开发以及测试评估在内的一整套实用方法，泛指以提高产品可用性质量为目的的一系列过程、方法、技术和标准,其核心是以用户为中心的设计方法论（user-centered 
+                          design，UCD）。它强调从用户的角度来进行产品的设计开发，这使它有别于传统和常规的开发方法。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 具体说来，在产品开发过程中运用可用性工程方法可以实现以下目标： </p>
+                        <ul>
+                          <li>准确而详细地理解用户特征、用户任务和使用环境； </li>
+                          <li>明确定义产品可用性质量的用户需求； </li>
+                          <li>基于同类产品或产品的原有版本，建立产品可用性质量基准； </li>
+                          <li>在产品生命周期的各个阶段，随时、快速、准确地获得用户反馈，发现可用性问题，及时改进产品设计； </li>
+                          <li>检验和确认产品是否满足可用性质量的用户需求； </li>
+                          <li>减少后期维护，避免无效开发，从而降低开发成本，缩短生产周期； </li>
+                          <li>评估和认证产品是否符合有关可用性的国际标准； </li>
+                          <li>定性或定量地评估产品的可用性质量，按照国际标准向采购方提供产品可用性质量测试报告； </li>
+                          <li>对同类产品的可用性进行比较分析，了解自己产品的竞争力，以针对性地改进产品和制定相应的产品发展策略； 
+                          </li>
+                          <li>评估和改进产品开发过程的可用性能力成熟度（UMM）并获得国际标准认证。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 可用性工程活动的范围广泛、形式多样，典型活动包括可用性规划、现场研究（观察、采访）、专家评审、原型开发及用户界面设计、可用性测试和评价（反馈收集型测试、绩效评估型测试、竞争力测试）、企业可用性指南、标准及开发过程规范的制定等。大致分为规划、标准运用、早期原型、专家评估、用户评估和用户主观评估六大类。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 4.2用户中心论 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">以用户为中心的设计方法是软件开发的一种思想和方法论，它注重所开发软件产品的可用性。按照ISO 
+                          9241-11的定义，以用户为中心的关键点是强调产品的最终使用者与产品之间的“交互质量”，它包括三方面特性：有效性、效率和满意度，其宗旨就是在软件开发过程中要紧紧围绕用户，在系统设计和测试过程中，要有用户的参与，以及时获得用户的反馈信息。实现这一目标通常要利用原型与用户进行交互，根据用户的反馈意见不断改进设计。遵循这种思想来开发软件，可以使软件产品具有易于理解、便于使用的优点，从而减少培训费用，减轻对用户的压力，提高用户的满意度。 
+                        </p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">4.3用户人群分析</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 不同的软件面向不同的用户人群，即使是同一软件，也可能会被不同类型的用户所实用。所以，在测试之前，要对软件的使用用户做分析，如：用户年龄、教育背景、操作习惯等。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 产品的可用性不仅取决于产品本身，还受使用环境的影响。使用环境包括以下几方面： 
+                        </p>
+                        <ul>
+                          <li>用户特征 包括知识背景、技能、经验、学历、年龄、体力等，有时还可按经验、职务或能力来分组； </li>
+                          <li>使用产品的目标 产品的主要用途以及工作时间长短、强度等； </li>
+                          <li>社会物理环境 如计算环境、温湿度环境、法律环境、社会文化习惯环境等。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在详细分析使用环境的基础上，设计出测试环境并在测试计划中明确定义，并使测试环境具有使用环境的典型特征，包括： 
+                        </p>
+                        <ul>
+                          <li>测试对象特征 知识背景、技能、学历、年龄和体力等； </li>
+                          <li>测试任务 应符合产品的主要用途并覆盖其主要功能，详细规定任务要求和执行顺序； </li>
+                          <li>测试的社会物理环境 所使用的物理设备、软件以及相关的物理和社会环境特征。</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 4.4 ALAC方法和运行剖面</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> ALAC ——Act-like-a-customer 是一种基于用户使用产品的知识开发出来的测试方法。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">是针对目前庞大而复杂的软件产品来应用的，因为软件愈复杂，存在的缺陷也就愈多，愈难于发现。 
+                          ALAC方法的实质就是在无穷无尽的操作方式的组合中，只是寻找和模仿用户的实际操作方式来使用产品，并针对这些使用方式的组合找到软件存在的缺陷。象用户一样思考，象用户一样行为，利用这种方法，可以有效的利用有限的资源，发现更多更重要的缺陷。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 采用此方法最大的受益者是用户，测试的计划和测试用例的设计以及测试工作实施都是针对那些客户最容易遇到的错误。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">如何得到用户的使用方式,并且使用恰当的方式来表达和描述它,并进而利用它进行设计分析和测试,可以引入运行剖面的概念.运行剖面是一种定量的刻画软件使用的方式.首先分析软件所面向的客户群,用户类型,收集和统计用户行为模式,逐步构造出运行剖面,在统计学层次上,用概率来描述软件的用户使用方式.</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 剖面：一组互不相交的元素及发生的概率，所有元素的概率和为1。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 假设功能A和功能B为互不相交的2个要素，发生的概率分别为60％和40％，那么剖面为（A，0.6）和（B，0.4）。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 运行剖面: 一组运行及其相应的发生的概率。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件运行剖面（欧空局）:对系统使用条件的定义。即系统的输入值用其按时间的分布或按它们在可能输入范围内的出现概率的分布定义。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 运行剖面的表现一般可为表格形式和图形格式。下图是一个使用表格形式反映一个电话系统的用户使用方式的示例.</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 运行剖面是在可靠性测试中常常采用的方法,但是因为它可以清晰的描述用户使用软件的模式,在易用性研究中同样可以起到重要的作用.在软件需求分析的期间分析和构造运行剖面,在设计,测试中应用运行剖面.</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 4.5使用性测试</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用性测试是在测试产品原型，了解产品易用程度和用户接受程度及满意度方面最常用的手段之一。使用性测试的目标是在产品投入市场之前，从真正的用户群体中发掘产品的使用性问题。下图是一个使用性测试环境.该实验室由单面镜分为两个区域，一个区域是观察室，助手通过监控和视频转换设备，观察和记录参试者行为、电脑屏幕的页面变化和时间；另一个区域是主实验室，参试者独立完成测试任务。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用性测试一般具有如下几个步骤:</p>
+                        <ul>
+                          <li> 参试者遴选</li>
+                          <li>场景,脚本,问卷等测试相关的设计</li>
+                          <li>执行测试</li>
+                          <li>数据分析</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 4.6其他易用性研究方法</p>
+                        <ul>
+                          <li> 深度访谈</li>
+                          <li> 启发式评估 </li>
+                          <li>焦点小组 </li>
+                          <li>问卷调查 </li>
+                          <li>文献研究</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">….</p>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 6.易用性测试准则</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 以下各准则是基于通用行业标准,指南,风格,规章而提出的,仅供参考.实际情况中所应用的应该远远超出以下列出的.这些准则既是在软件易用性设计中应该遵循的，也是在易用性测试中所要验证的。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 这部分内容基本按照GUI的各个元素来组织.GUI包含窗口，菜单，下拉式菜单、工具条、滚动条、对话框、按钮、图标和其他控制等界面元素.最后针对网站和多媒体提供2个应用专题.</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.1整体界面风格</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>遵循通用规范</strong></p>
+                        <ul>
+                          <li> 一般情况下遵循windows标准</li>
+                          <li>一般情况下保持同类软件已有典型风格,保证用户无须另外学习</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>准确性和一致性</strong></p>
+                        <ul>
+                          <li> 专业术语的解释易于了解(根据软件的用户水平决定)和准确</li>
+                          <li> 专业性强的软件要使用相关的专业术语，通用性界面则提倡使用通用性词眼。</li>
+                          <li> 术语和命令在软件内部使用和命名一致。</li>
+                          <li> 符合UI说明，所见即所得。</li>
+                          <li> 符合市场宣传口径,例如广告的承诺,用户手册的描述,甚至包装的标示</li>
+                          <li> 语言描述通顺流畅,无歧义,无错别字</li>
+                          <li> 没有图标、图像、声音和视频设计等多媒体缺陷。如：图标大小不一致，声音没有采用相同的格式和采样率。装载进入机器的程序文件的图标合乎规范。至少不应是编程工具自带的图示（MFC），最好是本公司或本系列产品的特有ico图标。</li>
+                          <li> 各个窗口/页面的标题、在Windows系统任务栏中的名称、以及本窗口内左下角状态栏中的提示（如果有的话）正确,统一</li>
+                          <li> 软件本身各版本之间的使用习惯和界面操作的承续性,尽量保持用户无须改变习惯</li>
+                          <li> 同一系统同一模板中各种页面和控件应保持主体风格一致，包括背景图案、整体色系、按钮排布等。</li>
+                          <li> 同一数据在不同模块或同一系列不同产品中名称应保持一致</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>结构合理</strong></p>
+                        <ul>
+                          <li> 常用功能突出.最常使用的按钮或菜单放在界面显著位置，使用颜色或者亮度差别突出显示重要部分</li>
+                          <li> UI布局合理, 洁净, 不唐突, 不拥挤</li>
+                          <li> 菜单或者窗口进入级别避免过多和过深</li>
+                          <li> UI风格与用户背景,产品定位符合和相称, 没有过于夸张,或者过分朴素枯燥 . </li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>可控制</strong></p>
+                        <ul>
+                          <li> 所需功能或者期待的响应应该明显,符合用户预期</li>
+                          <li> 方便灵活的功能跳转和状态跳转 同一任务可用多个路径或者方式完成,对于常用任务同时提供最简路径直接完成</li>
+                          <li> 提供终止操作的途径,任何时刻都允许用户决定放弃或者退回、退出</li>
+                          <li> 用户的输入应该具备确认过程</li>
+                          <li> 没有冗余的功能设置和提示信息</li>
+                          <li> 数据输入和输出。有多种方式实现数据的输入和输出</li>
+                          <li> 错误处理。程序应该在用户执行非法和不合理的操作之前提出警告，并且允许用户恢复由于错误操作导致丢失的数据。对于用户恶意的严重错误操作，程序要能够以一定规则进行判别，并采取适当的处理方式。</li>
+                          <li> 性能和速度适当。例如某些提示信息和进度条的显示,可能需要较慢的速度,留出充分的用户响应时间<br/>
+                          </li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>体现风格</strong></p>
+                        <ul>
+                          <li> 在框架符合以上规范的情况下，设计应当具有自己独特风格 </li>
+                          <li>安装界面上应有单位介绍或产品介绍，并有自己的图标。</li>
+                          <li> 主界面，最好是大多数界面上要有公司图标。</li>
+                          <li> 登录界面上要有本产品的标志，同时包含公司图标。</li>
+                          <li> 帮助菜单的“关于”中应有版权和产品信息。</li>
+                          <li> 公司的系列产品要保持一致的界面风格，如背景色、字体、菜单排列方式、图标、安装过程、按钮用语等应该大体一致。<br/>
+                          </li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">6.2窗体结构</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 主要有多窗体、单窗体以及资源管理器风格，无论那种风格，以下规则是应该被重视的。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>遵循通用规范</strong> </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">通常按Windows界面的规范来设计，即包含“菜单条、工具栏、工具箱、状态栏、滚动条、右键快捷菜单”的标准格式.小型软件一般不提供工具箱。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>布局合理 </strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">屏幕对角线相交的位置是用户直视的地方，正上方四分之一处为易吸引用户注意力的位置，在放置窗体时要注意利用这两个位置。 
+                        </p>
+                        <ul>
+                          <li>父窗体或主窗体的中心位置应该在对角线焦点附近。</li>
+                          <li> 子窗体位置应该在主窗体的左上角或正中。</li>
+                          <li> 多个子窗体弹出时应该依次向右下方偏移，以显示窗体出标题为宜。</li>
+                          <li> 长宽接近黄金点比例，切忌长宽比例失调、或宽度超过长度。</li>
+                          <li> 布局要合理,不宜过于密集，也不能过于空旷，合理的利用空间。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>区域集中</strong> </p>
+                        <ul>
+                          <li>完成同一功能或任务的元素放在集中位置，减少鼠标移动的距离。</li>
+                          <li> 按功能将界面划分局域块，用Frame框括起来,并要有功能说明或标题。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>字体色彩协调 </strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">字体的大小要与界面的大小比例协调</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 前景与背景色搭配合理协调，反差不宜太大，最好少用深色，如大红、大绿等。常用色考虑使用Windows界面色调。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 界面风格要保持一致，字的大小、颜色、字体要相同，除非是需要艺术处理或有特殊要求</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>支持标准切换 </strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">界面要支持键盘自动浏览按钮功能，即按Tab键的自动切换功能。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 分页界面要支持在页面间的快捷切换，常用组合快捷键Ctrl+Tab </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>支持合理缩放</strong> </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">如果窗体支持最小化和最大化或放大时，窗体上的控件也要随着窗体而缩放</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 对于含有按钮的界面一般不应该支持缩放，即右上角只有关闭功能。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 通常父窗体支持缩放时，子窗体没有必要缩放。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3控件总体准则</p>
+                        <ul>
+                          <li> 同一界面上的控件数最好不要超过10个，多于10个时可以考虑使用分页界面显示。</li>
+                          <li> 可写控件检测到非法输入后应给出说明并能自动获得焦点。</li>
+                          <li> Tab键的顺序与控件排列顺序一致，目前流行总体从上到下，同时行间从左到右的方式。</li>
+                          <li> 界面上首先应输入的和重要信息的控件在Tab顺序中应当靠前,位置也应放在窗口上较醒目的位置。</li>
+                          <li> 放置完控件后界面不应有很大的空缺位置</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3.1窗口</p>
+                        <ul>
+                          <li> 全部窗口可以通过相关的输入或菜单命令打开</li>
+                          <li> 全部窗口可以正确的关闭</li>
+                          <li> 窗口可以改变大小、移动和滚动</li>
+                          <li> 窗口中的数据内容可以用鼠标、功能建、方向箭头和键盘访问</li>
+                          <li> 当窗口被覆盖并重用后，窗口可以正确的再生</li>
+                          <li> 所有窗口相关的功能是可操作的</li>
+                          <li> 显示多个窗口时，窗口的名称被适当的表示</li>
+                          <li> 显示多个窗口时，活动窗口被适当的加亮</li>
+                          <li> 如果使用多任务，所有的窗口被实时更新</li>
+                          <li> 窗口的声音和颜色提示和窗口的操作顺序符合需求</li>
+                          <li> 在多窗口系统中，有些界面要求必须保持在最顶层，避免用户在打开多个窗口时，不停的切换甚至最小化其他窗口来显示该窗口下拉式菜单和鼠标操作 
+                          </li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3.2菜单</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 菜单是软件界面重要的组成部分.右键快捷菜单采用与菜单相同的准则</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>命名方式</strong></p>
+                        <ul>
+                          <li> 菜单条应当显示在合适的语境中,名字具有自解释性</li>
+                          <li> 应用程序的菜单条显示系统相关的特性（如时钟显示）</li>
+                          <li> 菜单文本字体、大小和格式正确</li>
+                          <li> 菜单前的图标能直观的代表要完成的操作, 不宜太大，与字高保持一直最好。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>组织方式</strong></p>
+                        <ul>
+                          <li> 菜单通常采用“常用--主要--次要--工具--帮助”的位置排列，一般符合Windows风格</li>
+                          <li> 菜单位置按照按功能来组织。完成相同或相近功能的菜单用横线隔开放在同一位置</li>
+                          <li> 一组菜单的使用有先后要求或有向导作用时，应该按先后次序排列。</li>
+                          <li> 无顺序要求时按使用频率和重要性排列，常用的放在开头, 不常用的靠后放置；重要的放在开头，次要的放在后边。</li>
+                          <li> 如果菜单选项较多，应该采用加长菜单的长度而减少深度的原则排列。</li>
+                          <li> 菜单深度一般要求最多控制在三层以内。</li>
+                          <li> 主菜单的宽度要接近，字数不应多于四个，每个菜单的字数能相同最好。</li>
+                          <li> 主菜单数目不应太多，最好为单排布置。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>操作逻辑</strong></p>
+                        <ul>
+                          <li> 适当的列出了所有的菜单功能和下拉式子功能</li>
+                          <li> 全部菜单条功能可以正确执行</li>
+                          <li> 可以通过鼠标访问所有的菜单功能</li>
+                          <li> 能够用其他的文本命令激活每个菜单功能</li>
+                          <li> 菜单功能随当前的窗口操作加亮或变灰</li>
+                          <li> 对无关的菜单最好用屏蔽处理，例如采用动态加载方式--只有需要的菜单才显示</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">6.3.3按钮</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>命名方式</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按钮命名易于理解，用词准确，与同一界面上的其他按钮易于区分，用户无须其他帮助就能知道该界面的功能并进行相关的正确操作。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按钮的位置和等价的按键符合通行规范。如“确定”和“取消”按钮的相对位置；确定等价键通常使用回车键，而取消等价键通常使用ESC键。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>组织方式</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">完成相同或相近功能的按钮用Frame框起来</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 重要的命令按钮与使用较频繁的按钮要放在界面上注目的位置。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 错误使用容易引起界面退出或关闭的按钮不应该放在易点位置。（横排开头或最后与竖排最后为易点位置。）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按钮大小基本相近，忌用太长的名称，免得占用过多的界面位置</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按钮的大小要与界面的大小和空间要协调。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免空旷的界面上放置很大的按钮。 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>操作逻辑</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 常用按钮要支持快捷方式。</p>
+                        <ul>
+                          <li> 默认按钮要支持Enter操作，即按Enter后自动执行默认按钮对应操作。</li>
+                          <li>与正在进行的操作无关的按钮应该加以屏蔽(Windows中用灰色显示，没法使用该按钮)。 </li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">6.3.4复选框,选项框,下拉列表</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 复选框和选项框按选择几率的高低而先后排列。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 复选框和选项框要有默认选项，并支持Tab选择。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 选项数相同时多用选项框而不用下拉列表框。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 界面空间较小时使用下拉框而不用选项框。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 选项数较少时使用选项框，相反使用下拉列表框。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 需用户选择的列表越短越好,如果很长,应该适当分级显示</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3.5工具栏,工具箱</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>提供自定义</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具栏要求可以根据用户的要求自己选择定制。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>组织方式</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 相同或相近功能的工具栏放在一起。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具栏中的每一个按钮要有及时提示信息。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 一条工具栏的长度最长不能超出屏幕宽度。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具栏的图标能直观的代表要完成的操作。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 系统常用的工具栏设置默认放置位置。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>适当使用工具箱</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具栏太多时可以考虑使用工具箱。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具箱要具有可增减性，由用户自己根据需求定制。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 工具箱的默认总宽度不要超过屏幕宽度的1/5。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3.6 状态条，滚动条</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 状态条要能显示用户切实需要的信息，常用的有：目前的操作、系统状态、用户位置、用户信息、提示信息、错误信息等，如果某一操作需要的时间较长，还应该显示进度条和进程提示。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 滚动条的长度要根据显示信息的长度或宽度能及时变换，以利于用户了解显示信息的位置和百分比。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 状态条的高度以放置五号字为宜，滚动条的宽度比状态条的略窄。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 若需长时间等待，应有进度提示条,如果只有一个沙漏或一个请等待的提示,时间长了用户会失去耐心</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.3.7 对话框</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 对于是否选择对话框，应当“是”按钮在左，“否”按钮在右</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 所有对话框应当尽量采用中文，但是例如对于系统或设备等专业名词可以采用英文说法避免翻译的不准确</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 打开文件等对话框应当同时存在输入框和浏览按钮</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 对于造成用户无法恢复的操作一定要提示用户。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> · 对于错误信息的提示要直观，避免出现如“Error 5 -- Unkown 
+                          Data”类似的提示，因为对于用户而言会造成用户心理上的混乱。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 错误提示时的对话框中的提示信息是否完整、通畅、友好、统一</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.4 数据输入及操作逻辑</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>一般逻辑</strong></p>
+                        <ul>
+                          <li> 可以正常向系统输入字母数字数据项，并且能够正确的回显。</li>
+                          <li>图形模式的数据项（如滑动条）可以正常工作</li>
+                          <li>关于数据输入消息可以被用户理解</li>
+                          <li>如果系统需要多次点击鼠标，用户可以在语境中正确识别</li>
+                          <li>如果鼠标有多个按钮，能够在语境中正确识别</li>
+                          <li>光标、处理指示器和识别指针随操作恰当的改变, 软件可操作与不可操作状态的应能够区别</li>
+                          <li>在读入用户所输入的信息时，根据需要选择是否去掉前后空格。 </li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">有些读入数据库的字段不支持中间有空格，但用户切实需要输入中间空格，这时要在程序中加以处理。 
+                        </p>
+                        <ul>
+                          <li>使用可见手段提示状态（提示、颜色变化、进度条）.例如当邮件到达,下载结束等时候采用语音和文本框弹出提示用户.操作响应时间比较长时使用进度条显示百分比</li>
+                          <li>功能的统一（对应、匹配）例如：有复制就要有粘贴、有添加功能就要有删除功能。</li>
+                          <li>必要时使用遥控器,手写,音控(听写)等其他控制方式,仍然可以完成标准功能</li>
+                          <li>日期的输入采用选择方式，时间的输入方式采用带微调方式的标准输入；同Windows的日期和时间调节。微调按钮应该在输入框的右侧</li>
+                          <li>在需要输入时间的地方，应提供默认时间项且该时间与服务器当前时间保持同步</li>
+                          <li>必要时提供鼠标自动定位或者输入框自动清空</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>风险处理</strong></p>
+                        <ul>
+                          <li> 对可能造成数据无法恢复的操作必须提供确认信息,给用户放弃选择的机会。</li>
+                          <li>对错误操作最好支持可逆性处理，如取消系列操作。</li>
+                          <li>对可能发生严重后果的操作要有补救措施。通过补救措施用户可以回到原来的正确状态。</li>
+                          <li>对可能造成等待时间较长的操作应该提供取消功能。</li>
+                          <li>协议确认等需要用户注意的对话框默认选项应当为不同意等否定选项，即需要用户确认才可以继续</li>
+                          <li>阻止用户作出未经授权或没有意义的操作。</li>
+                          <li>对可能引起致命错误或系统出错的输入字符或动作要加限制或屏蔽。</li>
+                          <li>在输入有效性字符之前应该阻止用户进行只有输入之后才可进行的操作。</li>
+                          <li>对一些特殊符号的输入、与系统使用的符号相冲突的字符等进行判断并阻止用户输入该字符。（特殊字符常有；;’”&gt;&lt;,｀‘：“［”｛、\|｝］+=）-(_*&amp;&amp;^%$#@!~,.。?/还有空格。)</li>
+                          <li> 尽可能避免用户无意录入无效的数据。可以采用相关控件限制用户输入值的种类。</li>
+                          <li>当用户作出选择的可能性只有两个时,可以采用单选框。 </li>
+                          <li>当选择的可能再多一些时,可以采用复选框,每一种选择都是有效的,用户不可能输入任何一种无效的选择。</li>
+                          <li>当选项特别多时，可以采用列表框，下拉式列表框。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>非法处理（数据或操作）</strong></p>
+                        <ul>
+                          <li> 输入时能够识别非法数据</li>
+                          <li>非法的输入或操作应有足够的提示说明。</li>
+                          <li>对运行过程中出现问题而引起错误的地方要有提示，让用户明白错误出处，避免形成无限期的等待。</li>
+                          <li>提示、警告、或错误说明应该清楚、明了、恰当。</li>
+                          <li>多次或不正确按鼠标不会导致无法预料的副作用</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>安装卸载</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 尽量减少用户的操作,统计完成安装任务中用户点击的次数,输入的长度…越少越好</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 安装时需要替换文件版本。理想情况建议安装来自动实现，或让用户选择一次批量处理</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 重复安装,已有低版本再装高版本、修复性安装的操作尽可能简短,明确</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 自动识别操作系统、语言环境进行自动适应的安装或者运行</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 安装过程中的各对话框应当大小相同，风格一致，下一步等继续按钮应当处于同一位置（易于鼠标不需要移动位置就可以点击继续），默认选中按钮应当是下一步等继续的按钮（方便回车等键盘操作）</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.5 快捷方式</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>一般准则</strong></p>
+                        <ul>
+                          <li> 为使用键盘的用户提供快捷方式，主要有菜单，按钮，右键菜单，键盘功能按钮</li>
+                          <li>对常用的菜单和按钮要有快捷命令方式</li>
+                          <li>在西文Windows及其应用软件中快捷键的使用大多是一致的。 一般情况下应该遵循通用的定义，不要改变用户已经习惯的方式</li>
+                          <li>右键菜单与菜单使用相同定义</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>快捷方式通用定义</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 这些快捷键也可以作为开发中文应用软件的标准,但亦可使用汉语拼音的开头字母。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 菜单类常用快捷方式 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">1) 面向事务的组合有: </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Ctrl-D 删除 ；Ctrl-F 寻找 ；Ctrl –H替换；Ctrl-I 
+                          插入 ；Ctrl-N 新记录 ；Ctrl-S 保存 Ctrl-O 打开。 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">2) 列表: </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Ctrl-R ，Ctrl-G定位；Ctrl-Tab下一分页窗口或反序浏览同一页面控件。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">3) 编辑: </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Ctrl-A全选；Ctrl-C 拷贝；Ctrl-V 粘贴；Ctrl-X 
+                          剪切；Ctrl-Z撤消操作；Ctrl-Y恢复操作。 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">4) 文件操作: </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Ctrl-P 打印；Ctrl-W 关闭。 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">5) 系统菜单 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Alt-A文件；Alt-E编辑；Alt-T工具；Alt－W窗口；Alt－H帮助。 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">6) MS Windows保留键: </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Ctrl-Esc 任务列表 ；Ctrl-F4 关闭窗口； Alt-F4 
+                          结束应用；Alt-Tab 下一应用 ；Enter 缺省按钮/确认操作 ；Esc 取消按钮/取消操作 ；Shift-F1 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">上下文相关帮助。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按钮类常用快捷方式 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Alt-Y确定(是)；Alt-C取消；Alt-N 否；Alt-D删除；Alt-Q退出； 
+                        </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">Alt-A添加；Alt-E编辑；Alt-B浏览；Alt-R读；Alt-W 
+                          写。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.6 帮助设施</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>一般准则</strong></p>
+                        <ul>
+                          <li> 系统应该提供详尽而可靠的帮助文档，在用户使用产生迷惑时可以自己寻求解决方法。</li>
+                          <li>通常帮助设施的方式有帮助,README,在线帮助,用户手册,导航,助手…… 形式包括纸介质的手册,电子文档,网页,产品包装,市场宣传材料…</li>
+                          <li>全部内容都应当是描述精确,与实际程序一致的,并且合法</li>
+                          <li>如果没有提供纸介质的帮助文档，最好有打印帮助的功能</li>
+                          <li>提供技术支持方式，一旦用户难以自己解决可以方便的寻求新的帮助方式。</li>
+                          <li>具备FAQ (常用问题处理)功能</li>
+                          <li>最好使用超级链接</li>
+                          <li>最好提供目前流行的联机帮助格式或HTML帮助格式。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>内容精确</strong></p>
+                        <ul>
+                          <li> 文档精确描述了系统的各种使用模式</li>
+                          <li>文档的内容和索引精确完整,超级链接精确完整</li>
+                          <li>交互顺序的描述精确</li>
+                          <li>采用的样例sample ,演示demo精确并与实际程序一致</li>
+                          <li>术语、菜单描述和系统相应与实际程序一致</li>
+                          <li>性能介绍与说明要与当前系统性能配套一致,避免出现陈旧的信息</li>
+                          <li>升级系统时应当及时修改帮助设施,保证内容同步</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>使用方便</strong></p>
+                        <ul>
+                          <li> 帮助设施要有即时针对性。在界面上调用帮助时应该能够及时定位到与该操作相对的帮助位置。使用过的帮助再次打开时建议自动定位到上次位置</li>
+                          <li>使用向导平台,最好提供逐级问答的引导方式</li>
+                          <li>使用索引,主题词和关键词,用户可以用关键词在帮助索引中搜索所要的帮助</li>
+                          <li>文档的设计（布局、缩进和图形）便于信息的理解</li>
+                          <li>帮助设施有简略和详细不同的版本,显示给用户的信息有更详细的文档解释</li>
+                          <li>提供及时调用系统帮助的功能。常用F1。</li>
+                          <li>建议使用精灵等方式引导用户操作</li>
+                        </ul>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7 应用专题1-网站类</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7.1 屏幕布局</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>空间布局</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 内容应占据网页的大部分空间，至少应占一半，最好接近80%，导航部分应不超过20%。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用空白区而不是粗线条或广告来分隔不同内容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>颜色选择</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 除了图片和图像之外，不要使用太多的颜色来修饰某个对象。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 正文和背景色的对比度要大。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 正文区和其它的功能区（如工具条、菜单条等）应使用不同的背景色。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>字体选择-可读性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 标题区、标题行和正文区应使用不同大小的字体。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用静止的正文，而不要用移动、闪烁或变焦的文字。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 字体应足够大，字体太小（小于10个像素单位）会降低可读性。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 不要将字体设置成绝对尺寸，应尽量使用相对尺寸。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用统一的字体，不要混合使用多种字体，否则会降低阅读速度。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>段落和标题-可浏览性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 每个网页都应该有标题，且网页标题应该清楚地表明网页的内容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 句子/段落应简短，每句不超过20个词，每段不超过5个句子。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 每个网页都应按照“倒金字塔”原则进行编写，即从一个简单的结论开始渐次展开。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用排版印刷的设计风格，横向排列信息，以符合用户的阅读习惯。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7.2 内容设计</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>准确性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 网站的内容应及时更新，以反映当前的最新状态。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 为链接加上描述信息,链接标题准确提示所链接的内容</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 写作质量要高，没有语法、拼写和排版错误。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 文章应该分段，这样用户容易理解。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 那些既向用户提供信息，又允许用户进行评论的网页，应明确区分信息区和评论区。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应该保证用户点击链接时不会出现网页不存在的情况。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用TAB或鼠标拖拽不会出现不该出现的页面或组件。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>完整性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 提供对网站所有者的介绍</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 提供历史信息记录</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应有指向相关网站的链接。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应有指向网站主办单位的链接。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>著作权</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 每篇文章或文档应标明作者姓名等相关信息。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应提供相应的参考文献。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应介绍站点拥有者的背景资料，如公司图标、名字、地址、电话号码和email地址等。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>时效性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应标明网站所用资源的产生日期。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应指出网页的最近修改时间。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 音频，动画和视频的使用 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">只有在必要时（如示范、教学、演讲等）才使用。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免循环播放。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 下载时应显示文件的类型和大小，以便让用户决定是否有必要等待。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 图形和图像的使用</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 只有当图形或图像真正有助于用户对信息的理解时才使用它。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用图像的缩略图技术。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 不要在搜索页面中使用图形。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在必须使用图形的时候，可多次使用同一个图形。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7.3 结构设计</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>效率和速度</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 网页的大小不应超过30000字节，以使用户在10秒钟之内能打开网页。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 下载网页的时间应使用户能够接受，一般来说在10-20秒之间。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在链接旁注明下载文件的大小，帮助用户预测下载时间。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 用户找到所需内容的点击链接次数要尽可能少（一般不应超过3次）。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 操作完毕，页面刷新及时。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 必要时提供鼠标自动定位或者输入框自动清空</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 简洁实用 只有在必要时才使用框架（Frame）,框架的使用使得打印网页时得不到用户想要的结果，并且通过收藏夹中的URL回不到原先的网页。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免使用尚未成熟的新技术,由于这些新技术尚未成熟，很可能给用户带来意想不到的麻烦（如使系统瘫痪等）。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 减少滚动的文字和连续播放的动画</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免总是打开新的浏览窗口.打开太多的窗口会使整个屏幕看起来很乱，并且使回退按钮失效。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免提供时髦而不实用的Internet功能.对大多数网站来说，提供网上购物、聊天、拍卖、免费邮件、三维站点结构图等功能，会产生一些负面影响。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免使用类似广告的表现形式（如标语、动画等）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 避免页面来回切换、闪动频繁，或出现白屏</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>灵活性-用户选择</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应该有输出或打印的格式选择。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 让不同的用户选择不同的语言来显示网页。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>可逆性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 保持有效的“回退”按钮, “回退”按钮是仅次于链接的、用户使用最频繁的导航功能，所以“回退”按钮失效会让用户感到失望。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 每页中都应设有返回主页的链接。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>方位性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 当一个链接被点击后，要把所有指向同一目标的链接都表示成已被访问过。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 指明哪些链接指向本页面，哪些链接指向本站点的其它页面，哪些链接指向其它站点。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应该把站点的内容按类别分组（一般应为7组左右）。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应提供站点结构图以帮助用户更快地找到所需的信息。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 提供本网站内的搜索能帮助用户更快地查找到所需的信息。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 为用户提供反馈信息，告诉他目前在站点中的位置。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>交互性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在网站上提供网站所有者的email地址和联机表单，以便获取用户对网站的反馈意见。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 提供网上论坛、网络会议等功能，让用户能够共享观点和进行讨论。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7.4 可访问性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>浏览器的兼容性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 保证网页能被所有主要的浏览器兼容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 保证网页能被同一浏览器的不同版本兼容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 保证网页能被不同类型的显示器（如单色显示器和数字电视等）兼容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>网站的可访问性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 利用META标记为搜索引擎提供本网页的关键词和描述信息。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按照规范向搜索引擎提交信息以保证站点能够被搜索到。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 网站内容的可访问性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 为多媒体（声音、动画等）提供等价的文本形式，以便使那些只能使用纯文本浏览器的用户能够获得网页的内容。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 有必要时应为那些不能阅读和阅读困难的用户（如盲人）提供与文字等价的内容（如声音文件等）。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.7.5 一致性</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>遵循通用规范</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用通常的链接颜色标准 ,通用的标准是未访问链接用蓝色表示，已访问链接用红色或粉色表示。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 按照通用的约定标准使用GUI控件（如单选钮，复选框）</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>网站整体风格一致</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>网页布局应一致。</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 文本的字型、字体和颜色应保持一致。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 导航帮助（如菜单条、按钮等）应一致。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在每一页的相同位置放置本网站标志</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 相同的功能或部件总是放在相同的地方</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 同样的操作总是产生同样的结果。</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.8 应用专题2-多媒体应用类</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.8.1 总体准则 </p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;">多媒体产品设计主要涉及到输入设备的选择、视频界面设计、音频界面设计等几个方面.</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 在设计过程中一定要充分考虑相关的人类因素，遵循以下这些设计原则:</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>完整性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 系统应满足所有交互要求并支持所有必要的任务。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>可控性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 让用户在任何时候都可以对媒体进行控制，完成停止、重复等操作，而且这些控制在设计上应与真实的物理设备类似，以便于用户使用。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>一致性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 界面布局要保持一致，相同的功能或部件总是放在相同的地方，同样的操作总是产生同样的结果。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>冗余性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 对同一条信息采用不同的媒体从不同侧面进行表达，以有利于用户对信息的理解。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>方位性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 任何时候都让用户知道他们位于什么地方，怎样找到他们所想要的信息。可以用索引、广角镜、导航图、目录表等手段来实现这一功能。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>反馈性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应提供适当的反馈信息，让用户知道系统是否正确地接受了输入的信息，对语音输入更应如此。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>灵活性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应提供多种可选媒体，让用户根据自己的经验、应用域知识和目标来选择合适的媒体。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>可逆性</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 应提供撤销功能，允许用户以简单的方式完成后退操作，并可在任何时候退出系统。</p>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.8.2 输入设备选择</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 合适的输入设备不仅要与用户的操作技能和经验相适应，还要与任务相协调，让用户容易使用，同时也要与操作环境相适应。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 目前，常用的输入设备主要有键盘、鼠标、滚动球、触摸屏、图板、操纵杆、光笔等等，在多媒体产品设计过程中，要根据不同需求来选择输入设备。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 表1 常用输入设备比较</p>
+                        <table align="center" bgcolor="#999999" border="0" style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;background-color:rgb(153, 153, 153);" width="700">
+                          <tbody><tr bgcolor="#CCCCCC" style="background-color:rgb(204, 204, 204);"> 
+                            <td><div align="center">输入设备</div></td>
+                            <td><div align="center">优势</div></td>
+                            <td><div align="center">不足</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>键盘</td>
+                            <td>文字数字输入，离散指针键移动，准确像素定位</td>
+                            <td>灵活性不高，速度较慢，有空间要求</td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>鼠标</td>
+                            <td>选择、拖动和操作对象，多功能性，为常用设备</td>
+                            <td>手动制图作业，公共终端，不能与主机分开使用</td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>滚动球</td>
+                            <td>小范围定位和选择，便携设备，速度快，不费力</td>
+                            <td> 拖动作业，手动制图作业，大范围选择作业</td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td> 触摸屏</td>
+                            <td>易学，选择任务简单，无额外空间要求</td>
+                            <td>长时期使用易疲劳，高分辨率任务，手触摸使屏幕模糊</td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>图板</td>
+                            <td> 手动制图，准确的图形数字化</td>
+                            <td> 要求实质的空间和水平表面</td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>操纵杆</td>
+                            <td>跟踪作业，定位和指示任务，长时间使用</td>
+                            <td>要求高分辨率或精确性的作业 </td></tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td>光笔</td>
+                            <td>指示和简单的输入操作，无额外空间要求，定位速度快</td>
+                            <td>长期使用易造成手腕和手臂疲劳，易使屏幕模糊</td>
+                          </tr>
+                        </tbody></table>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">6.8.3 视频界面设计</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 常用的视频输出媒体类型有文本、颜色、图表、图像、图标、视频、动画等等</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>文本</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 文本的基本属性有：间隔、字体、措辞等。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 间隔要考虑到行间隔、列间隔、每行文字的长度；</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 使用字体种类在同一屏中不要超过三种；</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 措辞要短小精悍，尽可能用容易理解的语言来表述。尽量避免指责用户的过失或冒犯用户，永远不要因为用户做错事而责备用户。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>颜色</strong></p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 颜色的使用要考虑多方面因素，周围环境对用户感觉的影响，不同颜色代表的含义，还要考虑到不同颜色相互搭配是否合适；另外，还要根据不同情况选择背景颜色，使用户更易理解他们间的相互关系</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 表2 几种常用颜色的基本属性</p>
+                        <table align="center" bgcolor="#999999" border="0" style="color:rgb(0, 0, 0);font-family:宋体;font-size:12px;line-height:20px;text-decoration:none;background-color:rgb(153, 153, 153);" width="700">
+                          <tbody><tr bgcolor="#CCCCCC" style="background-color:rgb(204, 204, 204);"> 
+                            <td width="59"><div align="center">颜色</div></td>
+                            <td width="207"><div align="center">含义</div></td>
+                            <td width="112"><div align="center">吸引注意力的效果</div></td>
+                            <td width="202"><div align="center">搭配效果好</div></td>
+                            <td width="98"><div align="center">避免成对出现</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">红色</div></td>
+                            <td>危险、热、停止、警报、财政赤字</td>
+                            <td><div align="center">好</div></td>
+                            <td>白色</td>
+                            <td><div align="center">绿色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">黄色</div></td>
+                            <td>危险、警告、灾难、异常</td>
+                            <td><div align="center">好</div></td>
+                            <td>黑色、深蓝色、绿色</td>
+                            <td><div align="center">白色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">绿色</div></td>
+                            <td>安全、满意、正常、通行</td>
+                            <td><div align="center">较差</div></td>
+                            <td>白色</td>
+                            <td><div align="center">红色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">浅蓝色</div></td>
+                            <td>建议性信息、凉爽</td>
+                            <td><div align="center">差</div></td>
+                            <td>黑色</td>
+                            <td><div align="center">黄色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">深蓝色</div></td>
+                            <td>建议性信息</td>
+                            <td><div align="center">较差</div></td>
+                            <td>白色</td>
+                            <td><div align="center">黄色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">紫红色</div></td>
+                            <td>警报</td>
+                            <td><div align="center">好</div></td>
+                            <td>白色</td>
+                            <td><div align="center"></div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">白色</div></td>
+                            <td>建议性信息</td>
+                            <td><div align="center">较差</div></td>
+                            <td>绿色、黑色、红色、深蓝色、紫红色<br/> </td>
+                            <td><div align="center">浅蓝色、黄色</div></td>
+                          </tr>
+                          <tr bgcolor="#FFFFFF" style="background-color:rgb(255, 255, 255);"> 
+                            <td><div align="center">黑色</div></td>
+                            <td>财政收入</td>
+                            <td><div align="center">较差</div></td>
+                            <td>白色、浅蓝色、黄色</td>
+                            <td><div align="center"></div></td>
+                          </tr>
+                        </tbody></table>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"><strong>图表、图像、图标</strong></p>
+                        <ul>
+                          <li> 图像要尽可能接近事实，彩色图像看起来比较真实，黑白图像适合显示简单事物。</li>
+                          <li>过多图像也会降低显示效果。要根据显示需要来决定图像的大小。</li>
+                          <li>使用的图标应该让用户容易联想到所代表的信息；</li>
+                          <li>不同的图标要有明显区别；</li>
+                          <li>图标样式要考虑到用户的不同文化背景，</li>
+                          <li>最好是根据目前的国际标准或者一些已为大家接受的标准来设计。</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>视频、动画</strong></p>
+                        <ul>
+                          <li> 用户应能控制视频的启动、暂停、停止等。</li>
+                          <li>在学习和教育软件中使用动画能提高年轻用户的兴趣，从而增强学习效果。</li>
+                          <li>较长视频片断会使用户厌倦，片断长度限制在45秒左右较合适。</li>
+                          <li>动画的播放时间最好控制在20到30秒之内。</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 6.8.4 音频界面设计</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>语音输入</strong></p>
+                        <ul>
+                          <li> 提高识别准确性，尽可能使用简短清晰的语言，</li>
+                          <li>输入语言尽量由发音不同的单词构成。</li>
+                          <li>用户在输入过程中应可以控制语音的启停，能退回到更习惯的输入方式，能停止或取消不正确的输入操作。</li>
+                          <li>系统要提供反馈信息，让用户了解系统对语音输入信息的解释。</li>
+                          <li>如果可能，在发送输入信息前，允许用户修改出现的错误。</li>
+                          <li>如果多媒体产品要面向不同语言的用户群，系统要提供语言选择功能</li>
+                        </ul>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> <strong>语音输出</strong></p>
+                        <ul>
+                          <li> 考虑时间因素，在没有任何中断出现时，应限制在45秒左右，</li>
+                          <li>避免用户产生突兀的感觉，输出语音至少要由三四句话组成。</li>
+                          <li>不同内容可以用不同的声音，这样用户就能在语音交互中轻松分辨出不同的信息。</li>
+                          <li>尽量使用自然录音,与合成语音相比，用户更喜欢也能更好理解模拟或数字化复制的语音</li>
+                        </ul>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 7.易用性测试策略与实施</p>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 7.1 总体原则</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 软件易用性主要是在软件需求分析和UI设计的阶段，使用软件可用性工程的各种方法来保证的。在软件确认测试中，易用性测试最大比重的工作是对于软件产品和UI设计的一致性，以及软件UI的正确性，进行测试。其他易用性因素的测试则由测试人员根据上文的种种细则和测试经验，与其他质量特性的测试混合进行。</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 易用性测试设计和实施的一般原则如下：</p>
+                        <ol>
+                          <li> 在软件需求分析和UI设计阶段，测试人员职责是参与同行评审，了解软件需求和UI，根据经验，以及从测试角度提出建议。注意使用性测试的主导是UI设计部门的用户研究人员。当然测试人员可以参与这些活动或者直接阅读使用性测试报告，可以了解软件面向的用户和用户行为模式，从而为后面的易用性测试设计打下基础</li>
+                          <li>测试人员在UI设计阶段结束后，再提出主观看法的易用性问题一定要非常慎重，因为很难得到客观的数据支持，个人的主观看法没有足够说服力，容易引起纠纷，影响项目进度，而且几乎不能得到修改。</li>
+                          <li>在测试设计阶段，测试人员职责是根据软件需求规格说明书，UI设计说明书，以及软件易用性的测试准则，在测试说明中设计易用性测试策略</li>
+                          <li>在测试实施阶段，测试人员职责是执行易用性测试</li>
+                          <li>建议在软件完整交付之后尽早专门进行一次UI的验证测试，验证软件与UI设计说明书是否一致。这样可以集中提出和及时处理UI在正确性，一致性方面的问题，因为UI修改对软件影响较大，集中处理和尽早处理可以保证项目进度。</li>
+                          <li>UI的验证测试建议由测试人员主导控制，UI设计人员协助，原因是UI某些内容例如像素级别的微小偏差是需要专业经验才能判断的，同时UI人员可以在此时全面了解UI与软件代码的结合情况。</li>
+                          <li>GUI的确认测试和回归测试，尽量使用自动化工具完成。</li>
+                          <li>由于版本的更新，需求的更动，必然触发UI的回归测试。注意控制测试阶段中间UI测试进行的时机和次数，否则影响项目进度。过多的次数加大测试工作量，降低测试效率。不及时的测试会贻误修改时机，加大修改工作量。</li>
+                          <li>测试阶段结束之前，最后进行一次最终版本的UI确认测试，保证最终版本的UI正确性和一致性。</li>
+                          <li>帮助设施的专项测试安排在测试阶段后期,同样需要在最后与最终版本的UI,功能同步确认一次,保证与最终版本的一致性</li>
+                        </ol>
+                        <p style="font-size:14px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 7.2 易用性测试设计</p>
+                        <ul>
+                          <li> 界定软件易用性相关内容范围,定义本软件易用性测试范围,特别是需要独立专项执行的测试项目 <br/>
+                            由测试人员进行的主要的易用性测试项目如下： 
+                            <ul>
+                              <li>UI界面静态测试</li>
+                              <li> UI交互信息测试</li>
+                              <li>UI逻辑流程测试</li>
+                              <li>帮助设施测试</li>
+                            </ul>
+                          </li>
+                          <li>界定软件全部UI静态界面与元素集合,设计静态测试用例,可以考虑使用自动化工具和脚本</li>
+                          <li>界定软件包含的交互方式,交互信息集合, 可以根据软件用户分析和使用性测试报告,使用ALAC方法设计用例</li>
+                          <li>界定软件操作逻辑流程,可以使用流程图描述, 可以根据软件用户分析和使用性测试报告,使用ALAC方法设计用例</li>
+                          <li>界定全部帮助设施方式, 设计相关测试用例</li>
+                          <li>根据易用性测试准则,考虑其他易用性因素的测试</li>
+                          <li>根据项目进度,安排需要独立专项测试的测试时间,安排回归测试的时间和次数</li>
+                          <li>如果是特殊类型的软件产品,例如网站网页,参考有关易用性设计专题</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 7.2.1 UI界面静态测试</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 根据需求规格说明书与UI设计规格说明书描述沿菜单树遍历，确认所有UI元素图形,文字显示正常,位置正确,内容正确。UI元素包括下拉式菜单、工具条、滚动条、对话框、按钮、图标和其他控制…具体细则参照本文6.1-6.3节</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 根据软件使用环境确认各种变动和参数设置下UI界面正常</p>
+                        <ul>
+                          <li> 屏幕保护、休眠以及切换到Dos全屏下等操作执行和恢复后对界面没有造成变形,显示失常等影响</li>
+                          <li>切换变更屏幕分辨率以及颜色质量对界面没有造成变形,显示失常等影响.包括直接变更和重起后变更2种情况. 
+                            由于显示器尺寸普遍增大,640*480测试优先级可以降低,1024*768以上参数优先级上升.考虑液晶显示,电视屏幕显示和16:9等新兴应用</li>
+                          <li>切换变更字体大小对界面没有造成变形,显示失常等影响.</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 7.2.2 UI交互信息测试</p>
+                        <ul>
+                          <li> 交互方式正确性,一致性测试(具体细则参照本文6.3-6.8) 
+                            <ul>
+                              <li>菜单,右键菜单,按钮等常规交互方式</li>
+                              <li> 热键,功能键等键盘交互方式</li>
+                              <li> 语音输入语音识别等音频交互方式</li>
+                              <li> 手写</li>
+                              <li>遥控器,操纵杆,触摸屏等其他交互方式</li>
+                            </ul>
+                          </li>
+                          <li>交互信息正确性一致性测试</li>
+                          <li>交互信息合法性测试</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;"> 7.2.3 UI逻辑流程测试</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 根据需求规格说明书与UI设计规格说明书描述沿菜单树遍历，确认所有用户操作逻辑和流程正确.具体细则参照本文6.4</p>
+                        <ul>
+                          <li> 状态跳转测试</li>
+                          <li>输入输出测试</li>
+                          <li>非法处理测试</li>
+                          <li>风险处理测试</li>
+                          <li>安装卸载测试</li>
+                        </ul>
+                        <p style="font-size:12px;font-family:宋体;line-height:18px;font-weight:bold;text-indent:20pt;">7.2.4 帮助设施测试</p>
+                        <p style="color:rgb(0, 0, 0);font-family:宋体;font-size:13px;line-height:20px;text-decoration:none;text-indent:2em;"> 测试全部帮助设施.具体细则参照本文6.6</p>
+                        <ul>
+                          <li> 帮助设施调用和链接测试</li>
+                          <li>帮助设施内容正确性测试</li>
+                          <li>帮助设施一致性测试(与软件一致,与需求和设计一致,本身内部一致)</li>
+                          <li>帮助设施索引和搜索测试</li>
+                        </ul>
+                        <p style="font-size:18px;font-family:宋体;line-height:20px;font-weight:bold;color:rgb(0, 0, 0);text-indent:20pt;"> 8.参考文献</p>
+                        <ul>
+                          <li> 欧盟可用性中国中心网站 http://usability.dlmu.edu.cn/</li>
+                          <li>可用性工程在IT工业中的应用，计算机世界</li>
+                          <li> 以用户为中心的软件产品开发方法，计算机世界</li>
+                          <li> 可用性测试报告通用工业规范CIF，计算机世界</li>
+                          <li> 常用的可用性工程方法，计算机世界 </li>
+                          <li>软件可用性与通用工业规范可用性测试报告标准，计算机科学 </li>
+                          <li>以用户为中心的设计方法论，计算机科学 </li>
+                          <li>《网站可用性设计指南》 曹志英 等 欧盟可用性中国中心</li>
+                          <li> 《多媒体产品的可用性设计指南》段建丽等 欧盟可用性中国中心 </li>
+                          <li>《软件工程实践者的研究方法》-------（美）Roger S.Pressman著 黄柏素 梅宏 
+                            译</li>
+                          <li> 《软件测试》 -------（美）Ron Patton著 周予滨 姚静 译</li>
+                          <li> 软件可靠性测试 北航可靠性工程研究所 陆民燕</li>
+                          <li> 软件测试中心测试人员的测试记录与总结</li>
+                        </ul>
+                        </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></div></div></div>
+</div>
+</span>
+</div></body></html> 
