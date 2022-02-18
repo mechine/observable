@@ -18,6 +18,7 @@
     * [NTP](ji-suan-ji-ji-chu/qi-ta/ntp.md)
   * [内存](ji-suan-ji-ji-chu/nei-cun.md)
 * [数据分析](shu-ju-fen-xi/README.md)
+  * [用户日活月活统计](shu-ju-fen-xi/yong-hu-ri-huo-yue-huo-tong-ji.md)
   * [一次数据分析过程](shu-ju-fen-xi/yi-ci-shu-ju-fen-xi-guo-cheng.md)
   * [数据分析师的「护城河」](shu-ju-fen-xi/shu-ju-fen-xi-shi-de-hu-cheng-he.md)
   * [范式](shu-ju-fen-xi/fan-shi.md)
