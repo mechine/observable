@@ -43,6 +43,7 @@
 * [PYTHON](python/README.md)
   * [定时调度任务](python/ding-shi-tiao-du-ren-wu.md)
   * [小技巧](python/xiao-ji-qiao.md)
+* [pip源设置](pip-yuan-she-zhi.md)
 * [SQL](sql/README.md)
   * [HIVE](sql/hive.md)
   * [ES-SQL](sql/es-sql.md)
