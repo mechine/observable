@@ -105,6 +105,7 @@
   * [JAVA](kai-fa/java/README.md)
     * [mybatis](kai-fa/java/mybatis.md)
     * [小技巧合集](kai-fa/java/xiao-ji-qiao-he-ji/README.md)
+      * [资源控制](kai-fa/java/xiao-ji-qiao-he-ji/zi-yuan-kong-zhi.md)
       * [maven相关参数](kai-fa/java/xiao-ji-qiao-he-ji/maven-xiang-guan-can-shu.md)
       * [maven插件](kai-fa/java/xiao-ji-qiao-he-ji/maven-cha-jian.md)
       * [替换jar包中的类](kai-fa/java/xiao-ji-qiao-he-ji/ti-huan-jar-bao-zhong-de-lei.md)
