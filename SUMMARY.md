@@ -89,6 +89,8 @@
       * [集群方案](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/ji-qun-fang-an.md)
       * [指标](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/prometheus-gai-nian.md)
       * [二元运算](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/er-yuan-yun-suan.md)
+      * [rules预聚合](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/rules-yu-ju-he.md)
+      * [常用](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/chang-yong.md)
       * [匹配模式](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/pi-pei-mo-shi.md)
     * [mongodb](xi-tong-she-ji/da-shu-ju-zu-jian/mongodb/README.md)
       * [mongodb 功能原理](xi-tong-she-ji/da-shu-ju-zu-jian/mongodb/mongodb-gong-neng-yuan-li.md)

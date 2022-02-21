@@ -42,5 +42,16 @@ Histogram 需要通过 \_bucket 来计算分位数，而 Summary 则直接存储
 
 
 
+\= : 选择与提供的字符串完全相同的标签。&#x20;
 
+!= : 选择与提供的字符串不相同的标签。&#x20;
 
+\=\~ : 选择正则表达式与提供的字符串（或子字符串）相匹配的标签。
+
+&#x20;!\~ : 选择正则表达式与提供的字符串（或子字符串）不匹配的标签。&#x20;
+
+例如：选择指标名称为 http\_requests\_total，环境为 staging、testing 或 development，HTTP 方法为 GET 的时间序列：
+
+```
+http_requests_total{environment=~"staging|testing|development",method!="GET"}
+```
