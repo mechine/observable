@@ -70,6 +70,7 @@
       * [rest](xi-tong-she-ji/xu-lie-hua-yu-fan-xu-lie-hua/rpc/rest.md)
   * [大数据组件](xi-tong-she-ji/da-shu-ju-zu-jian/README.md)
     * [kafka](xi-tong-she-ji/da-shu-ju-zu-jian/kafka.md)
+    * [logstash](xi-tong-she-ji/da-shu-ju-zu-jian/logstash.md)
     * [prometheus](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/README.md)
       * [prometheus http api](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/readme.md)
       * [Prometheus 概念](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/prometheus-gai-nian.md)

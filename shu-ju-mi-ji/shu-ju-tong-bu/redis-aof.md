@@ -61,7 +61,7 @@ AOF日志记录Redis的每个写命令，步骤分为：命令追加（append）
 
 即合并原有AOF日志中的重复操作，精简aof日志
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (3).png>)
 
 ### 拓展
 
