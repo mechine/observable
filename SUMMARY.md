@@ -95,6 +95,7 @@
   * [JAVA](kai-fa/java/README.md)
     * [小技巧合集](kai-fa/java/xiao-ji-qiao-he-ji/README.md)
       * [maven相关参数](kai-fa/java/xiao-ji-qiao-he-ji/maven-xiang-guan-can-shu.md)
+      * [maven插件](kai-fa/java/xiao-ji-qiao-he-ji/maven-cha-jian.md)
       * [替换jar包中的类](kai-fa/java/xiao-ji-qiao-he-ji/ti-huan-jar-bao-zhong-de-lei.md)
     * [语言特性](kai-fa/java/yu-yan-te-xing/README.md)
       * [类型](kai-fa/java/yu-yan-te-xing/lei-xing.md)

@@ -1,5 +1,20 @@
 # maven相关参数
 
+### 编码格式与java版本
+
+
+
+```xml
+<properties>    
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
+<maven.compiler.source>1.8</maven.compiler.source>    
+<maven.compiler.target>1.8</maven.compiler.target>    
+<java.version>1.8</java.version>
+</properties>
+```
+
+
+
 ### 跳过测试
 
 * \-DskipTests，不执行测试用例，但编译测试用例类生成相应的class文件至target/test-classes下
@@ -22,40 +37,89 @@
    <build>         
 ```
 
-### 执行测试
 
 
+### 冲突解决
 
-### 打印依赖
+> mvn dependency:tree
 
+剔除
 
+```
+<exclusions>
+    <exclusion>
+    <groupId>org.eclipse.jdt</groupId>
+    <artifactId>core</artifactId>
+    </exclusion>
+</exclusions>
+```
+
+shadow
+
+```
+<relocations>
+    <relocation>
+    <pattern>cn.tass</pattern>
+    <shadedPattern>com.sf.bdp</shadedPattern>
+    </relocation>
+</relocations>
+```
 
 ### all in one
 
-
-
-### 编码格式与java版本
-
-
-
-```xml
-<properties>    
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>    
-<maven.compiler.source>1.8</maven.compiler.source>    
-<maven.compiler.target>1.8</maven.compiler.target>    
-<java.version>1.8</java.version>
-</properties>
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-shade-plugin</artifactId>
+    <version>${shade.version}</version>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>shade</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 ```
 
-###
+
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-assembly-plugin</artifactId>
+    <version>${assembly.version}</version>
+    <inherited>false</inherited>
+    <executions>
+        <execution>
+            <phase>package</phase>
+            <goals>
+                <goal>single</goal>
+            </goals>
+        </execution>
+    </executions>
+    <configuration>
+        <descriptors>
+            <descriptor>src/main/assembly/bin.xml</descriptor>
+        </descriptors>
+    </configuration>
+</plugin>
+```
 
 
 
 ### 组件
 
+tomcat
 
+```
+```
 
+jetty
 
+```
+```
 
 
 
