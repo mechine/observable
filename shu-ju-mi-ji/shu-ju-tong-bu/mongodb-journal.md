@@ -65,9 +65,9 @@ storage.journal.commitInternalMs 决定 journal 刷盘的间隔，默认为100ms
 
 ### journal VS oplog
 
-![](../../.gitbook/assets/image.png)
-
 ![](<../../.gitbook/assets/image (1).png>)
+
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 
 
