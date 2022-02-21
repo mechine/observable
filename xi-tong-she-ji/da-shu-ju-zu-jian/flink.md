@@ -34,7 +34,7 @@ input | decode | filter | encode | output
 
 **flume**
 
-![ba0b604158e0796ef62d7b4bcf8ada70.png](https://en-resource/database/2389:1) source / channel / sink
+****![](../../.gitbook/assets/50d7b9cb63ce3d154e85f26c7bd34c6.png)****
 
 #### 从管道到批处理(MR)
 
@@ -45,7 +45,7 @@ input | decode | filter | encode | output
 3. 按键排序所有的键值对。在日志的例子中，这由第一个sort命令完成。
 4. 调用Reducer函数遍历排序后的键值对。如果同一个键出现多次，排序使它们在列表中相邻，所以很容易组合这些值而不必在内存中保留很多状态。在前面的例子中，Reducer是由uniq -c命令实现的，该命令使用相同的键来统计相邻记录的数量。
 
-![27bd93563114451e4536ee6aef080346.png](https://en-resource/database/2379:1)
+****![](../../.gitbook/assets/443f9b8ebca2db51ece8f3d8a94bd30.png)****
 
 **物化中间状态** **容错** **声明式查询语言** **资源容器化管理**
 
@@ -65,13 +65,15 @@ input | decode | filter | encode | output
 
 **FLINK SPARK JSTORM**
 
-![48b69428f5dce6ed71299189d9067c42.png](https://en-resource/database/2387:1)
+****![](../../.gitbook/assets/a9c7145fd035e47a54774f6ef3de422.png)****
 
 ### FLINK 概念
 
 #### 事件时间和处理时间
 
-很多原因都可能导致处理延迟：排队，网络故障（参阅“不可靠的网络”），性能问题导致消息代理/消息处理器出现争用，流消费者重启，重新处理过去的事件（参阅“重放旧消息”），或者在修复代码BUG之后从故障中恢复。 而且，消息延迟还可能导致无法预测消息顺序。例如，假设用户首先发出一个Web请求（由Web服务器A处理），然后发出第二个请求（由服务器B处理）。 A和B发出描述它们所处理请求的事件，但是B的事件在A的事件发生之前到达消息代理。现在，流处理器将首先看到B事件，然后看到A事件，即使它们实际上是以相反的顺序发生的。 ![58cde7d06e095752a9470d4bbb182a4b.png](https://en-resource/database/2381:1)
+很多原因都可能导致处理延迟：排队，网络故障（参阅“不可靠的网络”），性能问题导致消息代理/消息处理器出现争用，流消费者重启，重新处理过去的事件（参阅“重放旧消息”），或者在修复代码BUG之后从故障中恢复。 而且，消息延迟还可能导致无法预测消息顺序。例如，假设用户首先发出一个Web请求（由Web服务器A处理），然后发出第二个请求（由服务器B处理）。 A和B发出描述它们所处理请求的事件，但是B的事件在A的事件发生之前到达消息代理。现在，流处理器将首先看到B事件，然后看到A事件，即使它们实际上是以相反的顺序发生的。&#x20;
+
+![](../../.gitbook/assets/1bd524972ec2da5b26efe0d079af20f.png)
 
 #### 窗口类型
 
@@ -83,9 +85,11 @@ input | decode | filter | encode | output
 
 ### FLINK API
 
-![0fd8e56c07a65ada9dabcf9448accd42.png](https://en-resource/database/2391:1)
+![](../../.gitbook/assets/da48b757aeb5b4362933e0de0936d9c.png)
 
-**状态切换** ![8b2859eaea94355d5d3bdd72d3d9d21d.png](https://en-resource/database/2385:1)
+**状态切换**&#x20;
+
+![](../../.gitbook/assets/623456acd407bd451d41dcd17fb9c14.png)
 
 ```
 stream
@@ -111,7 +115,7 @@ CONTINUE：什么都不做 FIRE：触发计算 PURE：清除窗口的元素 FIRE
 
 #### join
 
-![b65131261aa952b9c3530b3ed929304e.png](https://en-resource/database/2393:1)
+![](../../.gitbook/assets/44a11fb374d031c94e3bb905af3221d.png)
 
 ### FLINK Table API / SQL
 
@@ -209,7 +213,7 @@ ZorkLogData2EsSink zorkLogData2EsSink = new ZorkLogData2EsSink();
 
 **trgger 与 状态**
 
-****
+![](../../.gitbook/assets/8f74ed76ae97fc1bc966a884d783c68.png)
 
 ****
 
