@@ -9,6 +9,7 @@
   * [分布式一致性](shu-ju-mi-ji/fen-bu-shi-yi-zhi-xing.md)
   * [窗口](shu-ju-mi-ji/chuang-kou.md)
   * [数据同步](shu-ju-mi-ji/shu-ju-tong-bu/README.md)
+    * [数据库CDC实践](shu-ju-mi-ji/shu-ju-tong-bu/shu-ju-ku-cdc-shi-jian.md)
     * [数据库CDC](shu-ju-mi-ji/shu-ju-tong-bu/shu-ju-ku-cdc.md)
 * [计算机基础](ji-suan-ji-ji-chu/README.md)
   * [网络](ji-suan-ji-ji-chu/wang-luo/README.md)
