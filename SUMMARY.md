@@ -87,6 +87,7 @@
     * [logstash](xi-tong-she-ji/da-shu-ju-zu-jian/logstash.md)
     * [prometheus](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/README.md)
       * [概念](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/gai-nian.md)
+      * [待学习](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/dai-xue-xi.md)
       * [角色](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/jiao-se.md)
       * [服务自动发现](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/fu-wu-zi-dong-fa-xian.md)
       * [relabeling](xi-tong-she-ji/da-shu-ju-zu-jian/prometheus/relabeling.md)
