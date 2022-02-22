@@ -101,6 +101,7 @@
       * [mongodb 功能原理](xi-tong-she-ji/da-shu-ju-zu-jian/mongodb/mongodb-gong-neng-yuan-li.md)
       * [mongodb 查询及常用命令](xi-tong-she-ji/da-shu-ju-zu-jian/mongodb/mongodb-cha-xun-ji-chang-yong-ming-ling.md)
     * [Opentsdb](xi-tong-she-ji/da-shu-ju-zu-jian/opentsdb.md)
+    * [clickhouse](xi-tong-she-ji/da-shu-ju-zu-jian/clickhouse.md)
     * [InfluxDB](xi-tong-she-ji/da-shu-ju-zu-jian/influxdb.md)
     * [Hbase](xi-tong-she-ji/da-shu-ju-zu-jian/hbase.md)
     * [Redis](xi-tong-she-ji/da-shu-ju-zu-jian/redis.md)
