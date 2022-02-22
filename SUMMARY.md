@@ -53,6 +53,7 @@
     * [SQLServer](shu-ju-fen-xi/sql/sqlserver.md)
   * [可观测性](shu-ju-fen-xi/ke-guan-ce-xing/README.md)
     * [指标梳理](shu-ju-fen-xi/ke-guan-ce-xing/zhi-biao-shu-li.md)
+    * [指标的AIOPS算法](shu-ju-fen-xi/ke-guan-ce-xing/zhi-biao-de-aiops-suan-fa.md)
     * [指标体系](shu-ju-fen-xi/ke-guan-ce-xing/zhi-biao-ti-xi.md)
 * [系统设计](xi-tong-she-ji/README.md)
   * [用户体验](xi-tong-she-ji/yong-hu-ti-yan/README.md)
