@@ -22,11 +22,16 @@ sum(http\_requests\_total{method="GET"}\[5m] offset 5m)&#x20;
 
 \---&#x20;
 
-timseries
+**timseries (一个指标一段时间的值)**
 
+streams of timestamped values belonging to the same metric and the same set of labeled dimensions.
 
+**sample（一个指标某一瞬间的值）**
 
-sample
+Samples form the actual time series data. Each sample consists of:
+
+* a float64 value
+* a millisecond-precision timestamp
 
 ## 指标标签规范
 
@@ -46,29 +51,70 @@ sample
 
 ## 指标分类
 
-counter
+### counter
 
-gauge
+### gauge
 
-histogram
+### summary
 
-summary
+* 根据 Exporter 提供的分位点，样本会被计算后拆分成多行数据，每行使用标签”quantile”区分，”quantile”的值包括 Exporter 提供的所有分位点。
+* 数据的排列顺序必须是按照标签”quantile”值递增；
+* 提供两行数据分别表示该监控指标所有样本的和、样本数量，命名格式为：`<监控指标名称>_sum`、`<监控指标名称>_count`
 
-untype
+```
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 3.9794e-05
+go_gc_duration_seconds{quantile="0.25"} 0.000119721
+go_gc_duration_seconds{quantile="0.5"} 0.00024831
+go_gc_duration_seconds{quantile="0.75"} 0.000588213
+go_gc_duration_seconds{quantile="1"} 0.001718785
+go_gc_duration_seconds_sum 0.007368653
+go_gc_duration_seconds_count 17
+```
+
+### histogram &#x20;
+
+* 根据 Exporter 提供的 Bucket 值，样本会被计算后拆分成多行数据，每行使用标签”le”区分，”le”为 Exporter 提供的 Buckets；
+* 数据的排列顺序必须是按照标签”le”值递增；
+* 必须要有一行数据的标签 le=”+Inf”，值为该监控指标的样本总数
+
+```
+# HELP prom_req_duration_secs Histogram of latencies for HTTP requests.
+# TYPE prom_req_duration_secs histogram
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="0.1"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="0.2"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="0.4"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="1"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="3"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="8"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="20"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="60"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="120"} 1
+prom_req_duration_secs_bucket{handler="/api/v1/label/",le="+Inf"} 1
+prom_req_duration_secs_sum{handler="/api/v1/label/"} 0.001304263
+prom_req_duration_secs_count{handler="/api/v1/label/"} 1
+```
+
+### untype
+
+## Retrieval 数据源
+
+* Retrieval：中定义了Prometheus Server需要从哪些地方拉取数据
+  * Jobs / Exporters：Prometheus可以从Jobs或Exporters中拉取监控数据。Exporter以Web API的形式对外暴露数据采集接口。
+  * Prometheus Server：Prometheus还可以从其他的Prometheus Server中拉取数据
+  * Pushgateway：对于一些以临时性Job运行的组件，Prometheus可能还没有来得及从中pull监控数据的情况下，这些Job已经结束了，Job运行时可以在运行时将监控数据推送到Pushgateway中，Prometheus从Pushgateway中拉取数据，防止监控数据丢失
+  * Service：是指Prometheus可以动态的发现一些服务，拉取数据进行监控，如从DNS，Kubernetes，Consul中发现
+
+
+
+
 
 ## 采集过程元数据
 
 在Prometheus中任何被采集的目标Target被称为Instance，通常对应单个进程。 相同类型的Instance被称为Job
 
-job
-
-instance
-
-target
-
-relabel:&#x20;
-
-对target信息中的一些维度进行转换变成指标中的维度，发生在采集前
+relabel: 对target信息中的一些维度进行转换变成指标中的维度，发生在采集前,比如截取address中的ip或者port单独作为一个tag
 
 ```
 ## target 自带的属性
@@ -133,5 +179,19 @@ Exporter 通过 HTTP 接口以文本形式向 Prometheus 暴露样本数据，�
 
 因此，即使你的监控已经下线，prometheus 还会拉取到旧的监控数据，需要手动清理 pushgateway 不要的数据。
 
+## AlertManager
 
+Prometheus监控系统中，采集与警报是分离的。警报规则在 **Prometheus** 定义，警报规则触发以后，才会将信息转发到给独立的组件**Alertmanager** ，经过 **Alertmanager** r对警报的信息处理后，最终通过接收器发送给指定用户。
+
+### 分组&#x20;
+
+Grouping 是 Alertmanager 把同类型的警报进行分组，合并多条警报到一个通知中&#x20;
+
+### 抑制&#x20;
+
+Inhibition 是 当某条警报已经发送，停止重复发送由此警报引发的其他异常或故障的警报机制。&#x20;
+
+### 静默&#x20;
+
+Silences 提供了一个简单的机制，根据标签快速对警报进行静默处理；对传进来的警报进行匹配检查，如果接受到警报符合静默的配置，Alertmanager 则不会发送警报通知。
 
