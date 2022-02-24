@@ -53,7 +53,13 @@ Samples form the actual time series data. Each sample consists of:
 
 ### counter
 
+Counter可以简单理解为计数器，是个比较简单但又常用的类型。适用于生成请求次数、错误次数等指标。
+
 ### gauge
+
+`Gauge`是一个用来记录实时值的指标，常用于表示CPU使用率、内存使用率、线程数等指标。
+
+`gauge`类型指标最常见的就是用来标识服务是否存活的`up`指标了，这个指标在大多的exporter上都会有，属于一个可以建通用警报规则的指标。
 
 ### summary
 
@@ -143,6 +149,8 @@ Exporter是Prometheus的一类数据采集组件的总称。它负责从目标�
 node-exporter用于采集服务器层面的运行指标，包括机器的loadavg、filesystem、meminfo等基础监控，类似于传统主机监控维度的zabbix-agent
 
 node-export由prometheus官方提供、维护，不会捆绑安装，但基本上是必备的exporter
+
+exporter会生成一个**UP**指标，记录job下有多少个活跃instance
 
 Exporter 通过 HTTP 接口以文本形式向 Prometheus 暴露样本数据，格式简单，没有嵌套，可读性强。每个监控指标对应的数据文本格式如下：
 
