@@ -63,6 +63,7 @@
   * [架构模式](xi-tong-she-ji/jia-gou-mo-shi.md)
   * [设计模式](xi-tong-she-ji/she-ji-mo-shi.md)
   * [软件工程](xi-tong-she-ji/ruan-jian-gong-cheng/README.md)
+    * [GROW](xi-tong-she-ji/ruan-jian-gong-cheng/grow.md)
     * [技术负债](xi-tong-she-ji/ruan-jian-gong-cheng/ji-shu-fu-zhai.md)
     * [规范制定](xi-tong-she-ji/ruan-jian-gong-cheng/gui-fan-zhi-ding.md)
     * [软件行业7种免费商业模式](xi-tong-she-ji/ruan-jian-gong-cheng/ruan-jian-hang-ye-7-zhong-mian-fei-shang-ye-mo-shi.md)
