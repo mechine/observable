@@ -111,7 +111,15 @@ Stepsize SonarQube Teamscale Velocity Jira
 
 
 
+## 参考资料
 
+Robert Nord 《The Future of Managing Technical Debt》&#x20;
+
+Brent Barton 《Managing Software Debt: Building for Inevitable Change》&#x20;
+
+Neal Ford、 Rebecca Parsons 《Building Evolutionary Architecture》&#x20;
+
+杨政权 《技术债治理的四条原则》
 
 
 
